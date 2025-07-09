@@ -60,7 +60,6 @@ export default function Login({ isRegisterPage = false }) {
                 setPassword(e.target.value)
             }} className='w-full max-w-[400px] mx-auto px-3 duration-200 hover:border-indigo-600 focus:border-indigo-600 py-2 sm:py-3 border border-solid border-indigo-400 rounded-full outline-none' placeholder='Password' type='password' />
             
-            {/* ADD THIS FOR THE FORGOT PASSWORD LINK */}
             <div className='w-full max-w-[400px] mx-auto text-right px-2'>
                 {!isRegisterPage && (
                     <Link href="/forgot-password" className="text-sm text-indigo-600 hover:underline">
@@ -81,7 +80,7 @@ export default function Login({ isRegisterPage = false }) {
             {isRegisterPage ? (
                 <p className='text-center'>Already have an account? <Link href="/login" className='text-indigo-600'>Sign in</Link></p>
             ) : (
-                <p className='text-center'>Don't have an account? <Link href="/signup" className='text-indigo-600'>Sign up</Link></p>
+                <p className='text-center'>Don&apos;t have an account? <Link href="/signup" className='text-indigo-600'>Sign up</Link></p>
             )}
         </div>
     )
